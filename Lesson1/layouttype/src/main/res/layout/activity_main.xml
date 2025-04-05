@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:text="Отображаемый текст"
+        android:text="Отображаемый текст Грачева Ксения"
         android:textAlignment="center"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="264dp" />

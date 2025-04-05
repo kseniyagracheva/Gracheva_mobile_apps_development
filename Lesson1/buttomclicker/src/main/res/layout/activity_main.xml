@@ -11,7 +11,8 @@
         android:id="@+id/tvOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Грачева Ксения"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -20,7 +21,7 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <Button
-        android:id="@+id/WhoAmI"
+        android:id="@+id/WhoAmI_KG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="352dp"
@@ -36,16 +37,17 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="352dp"
-        android:onClick="onItIsNotMeButtonClick"
+        android:onClick="onItIsNotMeButtonClick_KseniyaGracheva"
         android:text="It Is Not Me"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
+        android:layout_width="223dp"
+        android:layout_height="136dp"
+        android:text="Я Грачева Ксения"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

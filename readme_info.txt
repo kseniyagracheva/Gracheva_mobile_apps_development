@@ -1,49 +1,48 @@
 **Отчет по 1 практической работе**
 ----
-В начале выполнения данной практической работы была установлена среда разработки Android Studio, затем был создан первый поект Lesson 1, в котором далее создавались различные модули.
+В прцессе выполнения данной работы был создан проект Lesson1, в котором были созданы 3 модуля: Layouttype, control_lesson, button_clicker. Был создан эмулятор, и проведена ознакомительная работа с Android Studio.
 
-Layouttype Module
---
+![image](https://github.com/user-attachments/assets/cdbc3903-de96-4774-bb91-78c6c86dd61a)
+
 Сперва для ознакомительной работы с компонентами экрана был на экран был добавлен компонент TextView, а также было изменено его содержимое.
 
-
-![image](https://github.com/user-attachments/assets/26977d25-76e5-476e-baef-290e40219fc5)
+![image](https://github.com/user-attachments/assets/7ecdfeea-9ce2-4fea-9cdc-a28916844cea)
 
 Затем были создано новые файлы для изучения атрибутов макетов "ViewGroup".
 
-**Макет  с использованием LineraLayout**
+**Макет  с использованием LineraLayout в модуле Layouttype**
 
-![image](https://github.com/user-attachments/assets/012a58c4-6502-46a3-b6e9-d216e670be65)
+![image](https://github.com/user-attachments/assets/0f705caa-132f-4a68-8189-822da8def62d)
 
 **Макет с использованием TableLayout**
 
-![image](https://github.com/user-attachments/assets/7b2ed5a5-d273-4bc1-8442-bb5fc64b5d83)
+![image](https://github.com/user-attachments/assets/26438b8d-7ea1-4739-86ee-f34547611704)
 
 **Макет с использованием ConstraintLayout**
 
-![image](https://github.com/user-attachments/assets/0a1caf41-1977-4633-9841-6eb54fa7d977)
+![image](https://github.com/user-attachments/assets/6837871c-40e0-448f-88eb-41f63c9cce29)
+
+В модуле control_lesson был создан собственный макет на основе изученных элементов.
+
+![image](https://github.com/user-attachments/assets/04cc8177-7f4a-4142-946d-a7ecdb215ac1)
+
+Затем был создан новый файл activity_second.xml для изучения горизонтальной и вертикальной ориентаций.
+
+![image](https://github.com/user-attachments/assets/c7482216-48b5-4b8c-894c-51e5a756d26e)
 
 
-Control_lesson Module
---
-В данном модуле был создан собственный макет на основе изученных элементов.
+![image](https://github.com/user-attachments/assets/8ace5ae9-ef9e-41f0-8917-2fa32c90cdc2)
 
-![image](https://github.com/user-attachments/assets/05f13fe0-f085-4f34-a528-a71288b45dad)
+В итоге получилась следующая структура
 
-Затем был создан новый файл activity_second.xml, в котором был создан макет содеожащий PlainText и 6 кнопок.
+![image](https://github.com/user-attachments/assets/bd87cf6b-75cc-46f9-b6db-47742583b2a1)
 
-![image](https://github.com/user-attachments/assets/60e15832-a43d-420a-b996-af199aabe118)
+В модуле button_clicker были отработы обработчики событий нажатия на кнопку
 
-Далее был создан альтернативный файл actiity_second.xml (land) для альбомной ориентации.
+![image](https://github.com/user-attachments/assets/2ff7e0ee-77e0-4ead-b908-0cd5bcacc095)
 
-![image](https://github.com/user-attachments/assets/455af644-5ab5-47c4-815e-d18d04cc7452)
+![image](https://github.com/user-attachments/assets/5bce1efb-37ea-45a8-8483-c11f9de4139e)
 
-ButtonClicker Module
---
-
-В данном модуле был создан макет с использованием двух кнопок, текстового поля и чекбокса. А также, был модифицирован код MainActivity.java, где были добавлены обработчики событий нажатия на кнопки двумя разными способами.
-
-![image](https://github.com/user-attachments/assets/f4641d88-da2e-4cd9-a243-ff19ca879e13)
 
 Код в файле MainActivity.java выглядит следующим образом
   
@@ -63,8 +62,7 @@ ButtonClicker Module
     
     public class MainActivity extends AppCompatActivity {
         private TextView tvOut;
-        private Button btnWhoAmI;
-        private Button btnItIsNotMe;
+        private Button btnWhoAmI_KG;
         private CheckBox checkBox;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +70,7 @@ ButtonClicker Module
             EdgeToEdge.enable(this);
             setContentView(R.layout.activity_main);
             tvOut = findViewById(R.id.tvOut);
-            btnWhoAmI = findViewById(R.id.WhoAmI);
+            btnWhoAmI_KG = findViewById(R.id.WhoAmI_KG);
             checkBox = findViewById(R.id.checkBox);
             boolean isChecked = !checkBox.isChecked();
     
@@ -82,29 +80,26 @@ ButtonClicker Module
                 return insets;
             });
     
-            View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
+            View.OnClickListener oclBtnWhoAmI_KG = new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     tvOut.setText("Мой номер по списку № 8");
                     checkBox.setChecked(isChecked);
                 }
             };
-            btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
+            btnWhoAmI_KG.setOnClickListener(oclBtnWhoAmI_KG);
         }
-        public void onItIsNotMeButtonClick(View view) {
+        public void onItIsNotMeButtonClick_KseniyaGracheva(View view) {
             boolean isChecked = !checkBox.isChecked();
             checkBox.setChecked(isChecked);
     
             if (isChecked) {
-                tvOut.setText("Это не я сделал");
+                tvOut.setText("Мой номер по списку № 8");
             } else {
-                tvOut.setText("Мой номер по списку № 15");
+                tvOut.setText("Я Грачева Ксения!");
             }
     
         }
     }
 
 
-Выводы
----
-В процессе выполнения данной практической работы была произведена ознакомительная работа с Android Studio. Изучены принципы создания новых проектов и модулей в этих проектах, а также создания тестовых макетов с использованием различных элементов. Изучены принципы поддержки смены ориентации экрана, выполнено программное управление состоянием элементов и изучены два разных подхода в создании обработчиков событий для кнопок.

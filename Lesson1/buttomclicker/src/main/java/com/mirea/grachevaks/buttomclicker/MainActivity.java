@@ -14,8 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tvOut;
-    private Button btnWhoAmI;
-    private Button btnItIsNotMe;
+    private Button btnWhoAmI_KG;
     private CheckBox checkBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         tvOut = findViewById(R.id.tvOut);
-        btnWhoAmI = findViewById(R.id.WhoAmI);
+        btnWhoAmI_KG = findViewById(R.id.WhoAmI_KG);
         checkBox = findViewById(R.id.checkBox);
         boolean isChecked = !checkBox.isChecked();
 
@@ -33,23 +32,23 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
+        View.OnClickListener oclBtnWhoAmI_KG = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvOut.setText("Мой номер по списку № 8");
                 checkBox.setChecked(isChecked);
             }
         };
-        btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
+        btnWhoAmI_KG.setOnClickListener(oclBtnWhoAmI_KG);
     }
-    public void onItIsNotMeButtonClick(View view) {
+    public void onItIsNotMeButtonClick_KseniyaGracheva(View view) {
         boolean isChecked = !checkBox.isChecked();
         checkBox.setChecked(isChecked);
 
         if (isChecked) {
-            tvOut.setText("Это не я сделал");
+            tvOut.setText("Мой номер по списку № 8");
         } else {
-            tvOut.setText("Мой номер по списку № 15");
+            tvOut.setText("Я Грачева Ксения!");
         }
 
     }

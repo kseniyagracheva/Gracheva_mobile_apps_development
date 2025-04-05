@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="New life for mirea activity!" />
+            android:text="Грачева Ксения" />
     </TableRow>
 
     <TableRow
@@ -24,30 +24,19 @@
             android:id="@+id/button11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Грачева Ксения" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+            android:text="Грачева Ксения" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Грачева Ксения" />
     </TableRow>
 
     <TableRow
@@ -55,16 +44,27 @@
         android:layout_height="match_parent" >
 
         <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Грачева Ксения" />
+
+        <Button
             android:id="@+id/button12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Грачева Ксения" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
         <Button
             android:id="@+id/button13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Грачева Ксения" />
     </TableRow>
 
 </TableLayout>

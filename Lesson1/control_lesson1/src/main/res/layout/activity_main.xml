@@ -39,7 +39,7 @@
                 android:layout_width="371dp"
                 android:layout_height="325dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/_12" />
         </TableRow>
 
         <TableRow
@@ -98,7 +98,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="36dp"
-                        android:text="Иванов Иван"
+                        android:text="Грачева Ксения"
                         android:textSize="24sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.609"
