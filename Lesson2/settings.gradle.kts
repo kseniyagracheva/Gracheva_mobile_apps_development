@@ -23,3 +23,4 @@ rootProject.name = "Lesson2"
 include(":app")
 include(":app:myapplication")
 include(":activitylifecycle")
+include(":myultiactivity")
