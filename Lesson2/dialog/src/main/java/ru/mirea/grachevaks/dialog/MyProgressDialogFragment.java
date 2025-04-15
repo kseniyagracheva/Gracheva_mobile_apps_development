@@ -13,7 +13,6 @@ public class MyProgressDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Загрузка...");
-
         return progressDialog;
     }
 }

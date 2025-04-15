@@ -30,10 +30,8 @@ public class MyTimeDialogFragment extends DialogFragment {
                 minute,
                 true
         );
-
         return timePickerDialog;
     }
-
     private void showSnackbar(String message) {
         View rootView = getActivity().findViewById(android.R.id.content);
         Snackbar.make(rootView, message, Snackbar.LENGTH_SHORT).show();

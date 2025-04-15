@@ -32,7 +32,6 @@ public class MyDateDialogFragment extends DialogFragment {
                 month,
                 day
         );
-
         return datePickerDialog;
     }
 
