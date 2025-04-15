@@ -68,3 +68,69 @@
 ![image](https://github.com/user-attachments/assets/58b4d8ef-6255-40b5-ab8e-d34fa538e658)
 
 **2. Неявные намерения**
+
+В модуле IntentFilter была произведена работы с неявными намерениями. В файле activity_main.xml были добавлены 2 кнопки: "Открыть браузер" и "Передать ФИО".
+
+![image](https://github.com/user-attachments/assets/da17619e-3e6c-45df-aa5f-f8c8f28dddd6)
+
+После в файле MainActivity.java были добавлены обработчики событий нажатия на данные кнопки. 
+
+При нажатии на кнопку "Открыть браузер", открывался сайт МИРЭА благодаря Intent.ACTION_VIEW.
+
+![image](https://github.com/user-attachments/assets/f2f7eb53-1bf3-45e3-9e17-3243842ca180)
+
+При нажатии на кнопку "Передать ФИО" показывался текст, которы должен быть передан благодаря Intent.ACTION_SEND
+
+![image](https://github.com/user-attachments/assets/ea25d889-0d86-481a-bde1-f59e346a8fe2)
+
+**Задание №3**
+----
+
+**Всплывающие уведомления**
+
+Для выполнения данного задания был создан модуль ToastApp. В activity_main.xml была добавлена строка ввода текста и кнопка. 
+При нажатии на кнопку нужно было посчитать количество символов в введенной строке и вывести это количество и еще текст во всплывающем уведомлении. 
+Обработчик события нажатия на кнопку с реализация показа высплывающего уведомления был добавлен в файл MainActivity.java
+
+![image](https://github.com/user-attachments/assets/0fdbb752-4412-4e34-a683-34e1319404ab)
+
+**Уведомления**
+
+Для данного задания был создан модуль NotificationApp. 
+Была добавлена кнопка для отправки уведомления.
+
+![image](https://github.com/user-attachments/assets/07b0f942-0d2b-4c8a-ac91-be324706a2e1)
+
+В манифест файле было добавлено разрешение на показ уведомления, а также в файле MainActivity.java был добавлен обработчик события нажатия на кнопку для отправки уведомления.
+
+![image](https://github.com/user-attachments/assets/2a6714f4-bb59-45c7-899e-7df6ba478b24)
+
+![image](https://github.com/user-attachments/assets/56381ad2-b39f-4d22-863b-0b974c34be69)
+
+**Диалоговые окна**
+
+Для работы с диалоговыми окнами был создан новый модуль Dialog. А также новые Java Class, которые наследуются от класс DialogFragment. 
+Всего было добавлено 3 класса:
+1.  MyTimeDialogFragment;
+2.  MyDateDialogFragment;
+3.  MyProgressDialogFragment.
+
+В файле activity_main.xml были добавлены 3 кнопки.
+
+![image](https://github.com/user-attachments/assets/23449589-8167-41b6-bee0-ee9a045e62b7)
+
+В файле MainActivity.java были добавлены обработчики событий нажатия на данные кнопки.
+
+При нажатии на кнопку  "Show TimwDialog" всплывает диалоговое окно TimePickerDialog.
+
+![image](https://github.com/user-attachments/assets/5d3d1114-d525-4dac-9a25-c1b5d06fc2f2)
+
+При нажатии на кнопку "Show ProgressDialog" всплывает диалоговое окно ProgressDialog.
+
+![image](https://github.com/user-attachments/assets/adf7b0a0-8af6-47ef-9f29-eaa817d1e6e1)
+
+При нажатии на кнопку "Show DateDialog" всплывает диалоговое окно  DatePickerDialog.
+
+![image](https://github.com/user-attachments/assets/694cdc4a-f064-4b7f-aaa5-bcd4ec89675a)
+
+
