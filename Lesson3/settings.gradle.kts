@@ -22,3 +22,6 @@ dependencyResolutionManagement {
 rootProject.name = "Lesson3"
 include(":app")
 include(":intentapp")
+include(":sharer")
+include(":favoritebooks")
+include(":systemintentsapp")
