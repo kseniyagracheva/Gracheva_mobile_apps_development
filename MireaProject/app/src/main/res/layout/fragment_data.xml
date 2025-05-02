@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Пирог-шарлотка"
+        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Шарлотка (от фр. charlotte) — сладкий десерт из яблок, запечённых в тесте. Классическая шарлотка — это французское сладкое блюдо, приготовленное из белого хлеба, заварного крема, яиц, фруктов и ликёра."
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textSize="20sp" />
+</LinearLayout>
