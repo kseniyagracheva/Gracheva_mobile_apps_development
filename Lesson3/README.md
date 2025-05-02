@@ -69,3 +69,21 @@
 
 **Контрольное задание**
 
+В процессе выполнения данного задания было создано 2 новых фрагмента.
+
+Один из них - DataFragment, фрагмент, содержащий информацию об отрасли. В данном случае в файл xml-разметки были внесены изменения (отступы, цвета и стили), которые соответствуют требованиям "Material you". 
+Также была внесена информация про пирог. 
+
+![image](https://github.com/user-attachments/assets/ac078812-08c6-4fd7-8c0b-3e0d31b6bc69)
+
+Затем был создан фрагмент WebViewFragment. Файл разметки был исправлен, а также был исправлен файл java.
+
+![image](https://github.com/user-attachments/assets/c26db240-5ab9-4377-8e84-373fd363cf7a)
+
+После, были внесены изменения в файл activity_main_drawer.xml, и mobile_navigation.xml чтобы добавить новые пункты в меню.
+
+![image](https://github.com/user-attachments/assets/09ab7729-b4f2-4232-bf05-7d897d3ce2a5)
+
+В процессе выполнения возникла сложность с выходом в интернет, поэтому в манифест файле пришлось прописать строчку
+
+    <uses-permission android:name="android.permission.INTERNET"
