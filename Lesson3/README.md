@@ -1,3 +1,4 @@
+
 **Отчет по практике №3**
 ----
 
@@ -53,4 +54,18 @@
 
 ![image](https://github.com/user-attachments/assets/5fea1f27-3343-4bfd-81e6-7dcf5d267fa2)
 
+**Задание 4**
+
+Для выполнения данного задания был создан новый модуль SimpleFRagmentApp. Также было создано 2 фрагмента First Fragment и Sedcond Fragment. 
+Также были исправлены файла FirstFragmet.java и activity_main.xml, чтобы добавить туда дву кнопки для обработки вызова фрагментов. 
+Затем был добавлен новый Resource File, для смены ориентации. 
+Далее были внесены изменения в файл MAinActivity.java, для осущесвления грамотного поворота экрана.
+
+![image](https://github.com/user-attachments/assets/a7699837-f002-455d-9e54-c063fd9ab020)
+
+![image](https://github.com/user-attachments/assets/706e2753-c052-4600-a22d-890af784ded2)
+
+![image](https://github.com/user-attachments/assets/9f943172-baf3-4ce6-8c5c-536f2e4a9ae2)
+
+**Контрольное задание**
 
