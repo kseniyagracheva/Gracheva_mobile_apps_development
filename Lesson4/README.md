@@ -47,7 +47,8 @@
 В методе OnCreate было изменено имя потока, а также в привязанном к нопку событии был вызван поток и осуществлены все вычисления.
 Рассчеты в потоке производились некоторое количество секунд.
 
-![image](https://github.com/user-attachments/assets/7d34a10a-eae8-4687-b594-d0d5b3acb9bd)
+![image](https://github.com/user-attachments/assets/42402de0-094c-487d-81ca-c0c53fd1ab72)
 
-![image](https://github.com/user-attachments/assets/d4cf49c1-57b6-4ec1-8544-ed4fcc32ffd1)
+![image](https://github.com/user-attachments/assets/405f4ae5-e65e-4d6f-a710-20deb08007c4)
+
 
