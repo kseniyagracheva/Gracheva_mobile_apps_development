@@ -46,9 +46,11 @@
 Также был изменен файл MainActivity.java, все обращения к View элементам происходили через binding.
 В методе OnCreate было изменено имя потока, а также в привязанном к нопку событии был вызван поток и осуществлены все вычисления.
 Рассчеты в потоке производились некоторое количество секунд.
+При каждом новом нажатии на кнопку создавался новый поток.
 
 ![image](https://github.com/user-attachments/assets/42402de0-094c-487d-81ca-c0c53fd1ab72)
 
 ![image](https://github.com/user-attachments/assets/405f4ae5-e65e-4d6f-a710-20deb08007c4)
 
+![image](https://github.com/user-attachments/assets/9e967e76-c72c-4597-a51e-68519f1fffe8)
 
