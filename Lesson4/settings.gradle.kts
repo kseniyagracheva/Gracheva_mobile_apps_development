@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Lesson 4"
 include(":app")
+include(":thread")
