@@ -54,3 +54,117 @@
 
 ![image](https://github.com/user-attachments/assets/9e967e76-c72c-4597-a51e-68519f1fffe8)
 
+**Задание 3**
+
+В данном задании необходимо было ознакомиться с функциями, которые отправляют задачи в UI-поток. Были рассмотрены функции runOnUiThread, post и postDelayed.
+
+![image](https://github.com/user-attachments/assets/1bb0b07b-cae4-4ec2-8a0c-a8606329d289)
+
+Файл MainActivity.java выглядит следующим образом:
+    
+    package ru.mirea.grachevaks.data_thread;
+    
+    import android.os.Bundle;
+    import ru.mirea.grachevaks.data_thread.databinding.ActivityMainBinding;
+    import androidx.activity.EdgeToEdge;
+    import androidx.appcompat.app.AppCompatActivity;
+    import java.util.concurrent.TimeUnit;
+    
+    public class MainActivity extends AppCompatActivity {
+    
+        private ActivityMainBinding binding;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            EdgeToEdge.enable(this);
+            setContentView(R.layout.activity_main);
+            binding = ActivityMainBinding.inflate(getLayoutInflater());
+            setContentView(binding.getRoot());
+    
+            String report = "runn1 запускается первым,\n" +
+                    "runn2 запускается вторым сразу после завершения runn1\n" +
+                    "runn3 запускается последним с задержкой в 2 секунды\n" +
+                    "runOnUiThread - сразу запускает задачи в UI-поток\n" +
+                    "post - ставит задачи в очередь, ожидая завершения предыдущих\n" +
+                    "postDelayed - ставит задачи в очередь, как post, но еще устанавлиает\n" +
+                    "некотрую задержку.";
+    
+            final Runnable runn1 = new Runnable() {
+                public void run() {
+                    binding.tvInfo.setText("runn1");
+                }
+            };
+            final Runnable runn2 = new Runnable() {
+                public void run() {
+                    binding.tvInfo.setText("runn2");
+                }
+            };
+            final Runnable runn3 = new Runnable() {
+                public void run() {
+                    binding.tvInfo.setText("runn3");
+                    binding.tvInfo.postDelayed(() -> binding.tvInfo.setText(report), 2000);
+                }
+            };
+            Thread t = new Thread(new Runnable() {
+                public void run() {
+                    try {
+                        TimeUnit.SECONDS.sleep(2);
+                        runOnUiThread(runn1);
+                        TimeUnit.SECONDS.sleep(1);
+                        binding.tvInfo.postDelayed(runn3, 2000);
+                        binding.tvInfo.post(runn2);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            t.start();
+    
+        }
+    }
+
+**Задание 4**
+
+В данном задании была проведена работа с Lopper и Hadler.
+Был создан новый модуль Looper, в котором был создан новый класс MyLooper, где происходила обработка сообщения полученного из основного потока. Получение данных с основного потока и отправка их в looper происходит в классе MainActivity.
+Были введены возраст и должность. Задержка составила число секунд равных возрасту.
+
+![image](https://github.com/user-attachments/assets/8af73074-2382-41da-9ba4-53619c355932)
+
+![image](https://github.com/user-attachments/assets/c67e67cf-d3df-44c0-83e5-52a2718ab7d7)
+
+**Задание 5**
+
+В данном задании была произведена работа с Loader. Был создан новый модуль CryptoLoader, а в нем новый класс MyLoader. Нужно было отправить фразу, которая шифровалась бы с помощью алгоритма AES и дешифрованная передавалась бы в toast.
+
+![image](https://github.com/user-attachments/assets/00e3d93d-27be-4902-b981-31085aa5b186)
+
+**Задание 6**
+
+В данном задании необходимо было добавть воспроизведение аудиозаписи при помощи службы. 
+Для этого был создан нвый модуль ServiceApp, а в нем был создан новый класс PlayerService.
+В папке res была создана папка raw, куда была помещена аудиозапись.
+Далее были добавлены 2 кнопки "Воспроизвести" и "Остановить".
+
+![image](https://github.com/user-attachments/assets/e3c02834-7999-4931-8fe3-930b97416b71)
+
+При нажатии на кнопку "Воспроизвести" запускается служба, включается аудиозапись и приходит увеомление с названием композиции.
+
+![image](https://github.com/user-attachments/assets/81de8944-1ef3-41c0-b006-11c20261c9a8)
+
+Для создания уведомлений фонового сервиса были добавлены некоторые разрешения в манифест файл.
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />	/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"	/>
+
+А в блок service была добавлена следующая запись
+    
+    <service
+            android:name=".PlayerService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback"/>
+
+**Задание 7**
+
