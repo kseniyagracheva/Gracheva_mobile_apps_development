@@ -22,3 +22,8 @@ dependencyResolutionManagement {
 rootProject.name = "Lesson 4"
 include(":app")
 include(":thread")
+include(":data-thread")
+include(":lopper")
+include(":cryptoloader")
+include(":serviceapp")
+include(":workmanager")

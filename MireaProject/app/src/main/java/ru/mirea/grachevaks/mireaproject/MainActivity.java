@@ -1,19 +1,15 @@
 package ru.mirea.grachevaks.mireaproject;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-
 import ru.mirea.grachevaks.mireaproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_web,
                 R.id.nav_home,
                 R.id.nav_gallery,
-                R.id.nav_slideshow)
+                R.id.nav_slideshow,
+                R.id.nav_music_service)
                 .setOpenableLayout(drawer)
                 .build();
 

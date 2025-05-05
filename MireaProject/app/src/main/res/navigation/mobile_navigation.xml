@@ -34,4 +34,10 @@
         android:name="ru.mirea.grachevaks.mireaproject.ui.WebViewFragment"
         android:label="Браузер"
         tools:layout="@layout/fragment_web_view" />
+
+    <fragment
+        android:id="@+id/nav_music_service"
+        android:name="ru.mirea.grachevaks.mireaproject.ui.MusicServiceFragment"
+        android:label="Музыка (Service)" />
+
 </navigation>
