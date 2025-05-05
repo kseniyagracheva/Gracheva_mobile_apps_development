@@ -5,13 +5,13 @@
 В ходе выполнения данного задания необходимо было создать экран музыкального плеера с помощтю "binding" для вертикальной и горизонтальной 
 ориентации. 
 
-Для начала, чтобы включить ViewBinding, необходимо было внести изменения в блок android в файле build.gradel.kts (Module: app):
+Для начала, чтобы включить ViewBinding, необходимо было внести изменения в блок android в файле build.gradle.kts (Module: app):
 
     buildFeatures{
         viewBinding = true
     }
 
-Затем нужно было синхрнизировать проект с gradel файлами и затем пересобрать его.
+Затем нужно было синхрнизировать проект с gradle файлами и затем пересобрать его.
 
 ![image](https://github.com/user-attachments/assets/ab54419c-bed7-44c5-accc-5524ba208df6)
 ![image](https://github.com/user-attachments/assets/c061c17e-b350-44c7-8f76-964c64325e73)
@@ -168,3 +168,49 @@
 
 **Задание 7**
 
+В данном заании был создано новый модуль WorkManager, где был реализован новый класс UploadWorker. В процессе выполнения данного задания были поставлены ограничения для запуска приложения.
+А также были добавлены новые зависимости в gradle файл
+
+**Задание 8  - Контрольное задание**
+
+В данном задании в проект MireaProject был добавлен новый фрагмент для вызова фонового сервиса воспроизведения музыки в одном из вкладок меню.
+
+Сначала была снова создана директория raw  в папке res для хранения аудиозаписи.
+
+Затем был создан сервис для фонового воспроизведения музыки MusicPlayerService.java
+
+Затем, были внесены изменения в манифест файл, где был добавлен созданный сервис.
+
+    <service
+        android:name=".ui.MusicPlayerService"
+        android:enabled="true"
+        android:exported="false" />
+Потом, был создан фрагмент MusicServiceFragment для управления сервисом и была добавлена xml-разметка fragment_music_service.xml для данного фрагмента.
+
+Далее были внесены изменения в файл activity_main_drawer.xml, где был добавлен новый пункт меню, а также была импортирована иконка в папку drawable.
+
+    <item
+        android:id="@+id/nav_music_service"
+        android:icon="@drawable/ic_music_note"
+        android:title="Музыка (Service)" />
+Затем новый фрагмент был записан в файл mobile_navigation.xml.
+
+    <fragment
+        android:id="@+id/nav_music_service"
+        android:name="ru.mirea.grachevaks.mireaproject.ui.MusicServiceFragment"
+        android:label="Музыка (Service)" />    
+Также были внесены изменения в файл MainACtivity.java.
+
+    mAppBarConfiguration = new AppBarConfiguration.Builder(
+            R.id.nav_data,
+            R.id.nav_web,
+            R.id.nav_home,
+            R.id.nav_gallery,
+            R.id.nav_slideshow,
+            R.id.nav_music_service)
+            .setOpenableLayout(drawer)
+            .build();
+                
+![image](https://github.com/user-attachments/assets/f0a79b95-9093-4b92-a982-39955c880138)
+
+![image](https://github.com/user-attachments/assets/a3924ea1-3636-47e0-bdfa-50b3d0439a51)
