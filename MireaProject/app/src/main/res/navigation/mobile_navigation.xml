@@ -40,4 +40,24 @@
         android:name="ru.mirea.grachevaks.mireaproject.ui.MusicServiceFragment"
         android:label="Музыка (Service)" />
 
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="ru.mirea.grachevaks.mireaproject.ui.CompassFragment"
+        android:label="Компас"
+        tools:layout="@layout/fragment_compass" />
+
+    <fragment
+        android:id="@+id/nav_camera_note"
+        android:name="ru.mirea.grachevaks.mireaproject.ui.CameraNoteFragment"
+        android:label="Фото-заметка"
+        tools:layout="@layout/fragment_camera_note" />
+
+    <fragment
+        android:id="@+id/nav_voice_recorder"
+        android:name="ru.mirea.grachevaks.mireaproject.ui.VoiceRecorderFragment"
+        android:label="Диктофон"
+        tools:layout="@layout/fragment_voice_recorder" />
+
+
+
 </navigation>

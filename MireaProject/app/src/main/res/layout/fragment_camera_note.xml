@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/camera"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Фото" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите подпись к фото"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить заметку"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

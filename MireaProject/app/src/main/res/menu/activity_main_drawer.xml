@@ -28,5 +28,19 @@
             android:id="@+id/nav_music_service"
             android:icon="@drawable/ic_music_note"
             android:title="Музыка (Service)" />
+        <item
+            android:id="@+id/nav_compass"
+            android:title="Компас"
+            android:icon="@drawable/compass"/>
+        <item
+            android:id="@+id/nav_camera_note"
+            android:icon="@drawable/camera"
+            android:title="Фото-заметка" />
+        <item
+            android:id="@+id/nav_voice_recorder"
+            android:icon="@drawable/mic"
+            android:title="Диктофон" />
+
+
     </group>
 </menu>

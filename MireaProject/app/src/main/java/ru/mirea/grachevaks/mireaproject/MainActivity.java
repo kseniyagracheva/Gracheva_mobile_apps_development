@@ -41,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_home,
                 R.id.nav_gallery,
                 R.id.nav_slideshow,
-                R.id.nav_music_service)
+                R.id.nav_music_service,
+                R.id.nav_compass,
+                R.id.nav_camera_note,
+                R.id.nav_voice_recorder)
                 .setOpenableLayout(drawer)
                 .build();
 
