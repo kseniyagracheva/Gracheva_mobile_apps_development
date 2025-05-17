@@ -19,3 +19,13 @@
 
 ![image](https://github.com/user-attachments/assets/a7c2b16a-a444-46bc-b98d-ff13780c42ad)
 
+**Задание 2**
+
+Для выполнения данного задания был создан модуль SecureSharedPreferences. В данном модуле отображается имя поэта и его фотография.
+Также создается безопасное хранилище с помощью EncryptedSharedPreferences и данные сохраняются туда.
+
+![image](https://github.com/user-attachments/assets/4fcfead3-0811-465b-a0e3-64ac6671af70)
+
+Зашифрованные данные были добавлены в файл настроек.
+
+![image](https://github.com/user-attachments/assets/7fe12079-a7c4-4fa9-baa1-9cb728623466)
