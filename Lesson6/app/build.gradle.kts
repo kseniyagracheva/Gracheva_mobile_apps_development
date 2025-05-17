@@ -3,6 +3,12 @@ plugins {
 }
 
 android {
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+
     namespace = "ru.mirea.grachevaks.lesson6"
     compileSdk = 35
 

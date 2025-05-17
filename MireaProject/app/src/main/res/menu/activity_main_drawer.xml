@@ -40,6 +40,14 @@
             android:id="@+id/nav_voice_recorder"
             android:icon="@drawable/mic"
             android:title="Диктофон" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Профиль" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/edit"
+            android:title="Заметки" />
 
 
     </group>
