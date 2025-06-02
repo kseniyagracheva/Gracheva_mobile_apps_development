@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="187dp" />
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Вход в приложение"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Войти"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регистрация" />
+</LinearLayout>

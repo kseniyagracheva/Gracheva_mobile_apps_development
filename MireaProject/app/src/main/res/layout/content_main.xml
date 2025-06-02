@@ -17,4 +17,84 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
+
+    <TextView
+        android:id="@+id/textWeather"
+        android:layout_width="314dp"
+        android:layout_height="120dp"
+        android:hint="weather"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountry"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="260dp"
+        android:layout_height="69dp"
+        android:text="Получить данные"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWeather"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/textIp"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:hint="ip"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:hint="city"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIp"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/textRegion"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:hint="region"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCity"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/textCountry"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:hint="country"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegion"
+        app:layout_constraintVertical_bias="0.068" />
 </androidx.constraintlayout.widget.ConstraintLayout>

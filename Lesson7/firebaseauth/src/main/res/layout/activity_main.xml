@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleFirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/titleEmailPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailpassword_title_text"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signed_out"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/emailPasswordFields"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/fieldEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/fieldPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailPasswordButtons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/emailSignInButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sign_in" />
+
+        <Button
+            android:id="@+id/emailCreateAccountButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/create_account"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signedInButtons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/signOutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sign_out" />
+
+        <Button
+            android:id="@+id/verifyEmailButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/verify_email"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>
